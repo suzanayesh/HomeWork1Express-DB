@@ -1,0 +1,28 @@
+{
+  "name": "homework1",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "build-tsc": "tsc -w",
+    "run-watch": "nodemon ./dist/index.js",
+    "dev": "concurrently \"npm:build-tsc\"  \"npm:run-watch\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/typeorm": "^10.0.0",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "tsc": "^2.0.4",
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0"
+  }
+}
